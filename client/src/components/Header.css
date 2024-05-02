@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.header button {
+    margin-right: 60px;
+    padding: 12px 24px; /* Doubled the padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size */
+    font-weight: bold;
+}
+
+.header button:hover {
+    background-color: #0056b3;
+}

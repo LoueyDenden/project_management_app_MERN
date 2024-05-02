@@ -1,0 +1,214 @@
+/* TaskList.css */
+
+/* Container for the entire task list */
+.board-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.task-list-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+/* Column styling */
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Column header styling */
+.column h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+}
+
+/* Task cards container styling */
+.task-cards-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Task card styling */
+.task-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Task card title styling */
+.task-card h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333; /* Dark text color */
+}
+
+/* Task card description styling */
+.task-card p {
+    margin-bottom: 0;
+    color: #666; /* Medium text color */
+}
+
+
+
+
+
+.add-task-container {
+    width: 25%;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-task-container input,
+.add-task-container textarea {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    resize: none; /* Disable textarea resize */
+}
+
+.add-task-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-task-container button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.task-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative; /* Ensure relative positioning for absolute positioning of the X button */
+}
+
+.task-card .delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red; /* Make the button background red */
+    color: white; /* Set text color to white */
+    border: none;
+    border-radius: 50%; /* Make the button round */
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding-left: 6px;
+    padding-top: 3px;
+}
+
+.task-card .delete-button:hover {
+    background-color: darkred; /* Darken the button color on hover */
+}
+
+
+
+
+
+
+
+.task-card {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task-card .edit-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.task-card .edit-button:hover {
+    background-color: #45a049;
+}
+
+
+
+.edit-task-container {
+    margin-top: 10px;
+}
+
+.edit-task-container input[type="text"],
+.edit-task-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.edit-task-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.edit-task-container button:hover {
+    background-color: #45a049;
+}
+
+
+
+.edit-task-container select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M6.297 7.774l3.406 3.43 3.413-3.43a.82.82 0 0 1 1.158 1.157l-4.131 4.163a.82.82 0 0 1-1.159 0l-4.134-4.163a.818.818 0 1 1 1.156-1.157z" fill="%23454f5c"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 14px;
+    cursor: pointer;
+}
+
+/* Hover style for select dropdown */
+.edit-task-container select:hover {
+    border-color: #aaa;
+}
+
+/* Focus style for select dropdown */
+.edit-task-container select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
